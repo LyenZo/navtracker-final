@@ -16,7 +16,7 @@ const Edit_rastreo = () => {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/api/rastreo/${id_rastreo}`)
+        axios.get(`https://api.navtracker.xdn.com.mx/api/rastreo/${id_rastreo}`)
             .then(response => setRastreo(response.data))
             .catch(error => console.error(error));
     }, [id_rastreo]);

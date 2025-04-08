@@ -28,7 +28,7 @@ const Crud_rastreo = () => {
 
         const fetchUsuario = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/api/perfil", {
+                const response = await axios.get("https://api.navtracker.xdn.com.mx/api/perfil", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setUsuario(response.data);

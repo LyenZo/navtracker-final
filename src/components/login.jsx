@@ -18,18 +18,23 @@ const Login = () => {
         setError(null);
 
         try {
-            const response = await axios.post("http://localhost:3001/api/login", usuario);
-            if (response.data.token) {
-                localStorage.setItem("token", response.data.token);
+            const response = await axios.post("https://api.navtracker.xdn.com.mx/api/login", usuario);
+            console.log("Respuesta de la API:", response.data);  // Para depuración
+        
+            // Cambiar 'access_token' por 'token'
+            if (response.data.token) {  // Ahora buscamos 'token'
+                localStorage.setItem("token", response.data.token);  // Guardamos el 'token'
                 alert("Inicio de sesión exitoso");
                 navigate("/perfil");
             } else {
                 setError("Credenciales incorrectas");
             }
         } catch (error) {
+            console.error("Error al intentar iniciar sesión:", error.response);  // Muestra detalles del error
             setError("Hubo un problema al iniciar sesión. Intenta de nuevo.");
         }
-    };
+        
+    };        
 
     return (
         <div className="container mt-5">

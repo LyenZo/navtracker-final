@@ -30,7 +30,7 @@ const C_usuario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/api/usuario/", usuario);
+            await axios.post("https://api.navtracker.xdn.com.mx/api/usuario/", usuario);
             alert("Usuario registrado correctamente");
             setUsuario({
                 nombre: "",
@@ -112,7 +112,6 @@ const C_usuario = () => {
                         <option value="">Tipo de usuario</option>
                         <option value="1">Conductor</option>
                         <option value="2">Pasajero</option>
-                        <option value="3">Administrador</option>
                     </select>
                 </div>
 

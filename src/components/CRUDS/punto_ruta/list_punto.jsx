@@ -10,13 +10,13 @@ const List_punto = () => {
     const [pointsPerPage, setPointsPerPage] = useState(5); 
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/punto_ruta/")
+        axios.get("https://api.navtracker.xdn.com.mx/api/punto_ruta/")
             .then(response => setPuntos(response.data))
             .catch(error => console.error(error));
     }, []);
 
     const handleDelete = (id_punto) => {
-        axios.delete(`http://localhost:3001/api/punto_ruta/${id_punto}`)
+        axios.delete(`https://api.navtracker.xdn.com.mx/api/punto_ruta/${id_punto}`)
             .then(() => setPuntos(puntos.filter(punto => punto.id_punto !== id_punto)))
             .catch(error => console.error(error));
     };

@@ -11,6 +11,7 @@ const Perfil = () => {
 
     useEffect(() => {
         const token = localStorage.getItem("token");
+        console.log("Token:", token);
         if (!token) {
             navigate("/");
             return;
@@ -18,7 +19,7 @@ const Perfil = () => {
 
         const fetchUsuario = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/api/perfil", {
+                const response = await axios.get("http://localhost:5000/api/usuario/perfil", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setUsuario(response.data);

@@ -21,7 +21,7 @@ const Create_punto = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/api/punto_ruta/", punto);
+            await axios.post("https://api.navtracker.xdn.com.mx/api/punto_ruta/", punto);
             alert("Punto de ruta registrado correctamente");
             setPunto({
                 nombre: "",

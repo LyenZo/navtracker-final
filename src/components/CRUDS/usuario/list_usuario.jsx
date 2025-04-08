@@ -24,7 +24,7 @@ const R_usuario = () => {
     });
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/usuario/")
+        axios.get("https://api.navtracker.xdn.com.mx/api/usuario/")
             .then(response => {
                 setUsuarios(response.data);
                 setFilteredUsuarios(response.data);
@@ -33,7 +33,7 @@ const R_usuario = () => {
     }, []);
 
     const handleDelete = (id_u) => {
-        axios.delete(`http://localhost:3001/api/usuario/${id_u}`)
+        axios.delete(`https://api.navtracker.xdn.com.mx/api/usuario/${id_u}`)
             .then(() => setUsuarios(usuarios.filter(usuario => usuario.id_u !== id_u)))
             .catch(error => console.error(error));
     };
