@@ -53,9 +53,11 @@ import Map from "./components/CRUDS/rastreo/mapa_rastreo";
 
 
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
+      
       {/* <!-- Home --> */}
       <Route path="/" element={<Home />} />
       {/* <!-- punto_ruta --> */}
