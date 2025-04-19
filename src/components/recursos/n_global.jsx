@@ -50,7 +50,7 @@ const N_global = () => {
     return (
         <div>
             {/* Navbar */}
-            <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: "#198754" }}>
+            <nav className="" style={{ backgroundColor: "#198754" }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand ms-3 text-white" to="/">
                         <img src="/img/logo.png" alt="Logo" style={{ height: "40px" }} />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 import Menu_sesion from "../components/recursos/menu_sesion";
 import Menu_cruds from "../components/menu_cruds"; 
 import Credencial from "../components/credencial"; 

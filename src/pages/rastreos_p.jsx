@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 import R_rastreo from "../components/CRUDS/rastreo/list_rastreo";
 import Menu_sesion from "../components/recursos/menu_sesion"; // Asegúrate de importar el componente
 

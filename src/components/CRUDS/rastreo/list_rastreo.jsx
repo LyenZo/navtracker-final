@@ -11,7 +11,7 @@ const R_rastreo = () => {
 
     // Función para obtener los rastreos desde la API
     const fetchRastreos = () => {
-        axios.get("https://api.navtracker.xdn.com.mx/api/rastreo/")
+        axios.get("https://3.88.222.39/api/rastreo")
             .then(response => setRastreos(response.data))
             .catch(error => console.error(error));
     };
@@ -29,7 +29,7 @@ const R_rastreo = () => {
 
     // Función para manejar la eliminación de un rastreo
     const handleDelete = (id_rastreo) => {
-        axios.delete(`https://api.navtracker.xdn.com.mx/api/rastreo/${id_rastreo}`)
+        axios.delete(`http://3.88.222.39/api/rastreo${id_rastreo}`)
             .then(() => setRastreos(rastreos.filter(rastreo => rastreo.id_rastreo !== id_rastreo)))
             .catch(error => console.error(error));
     };

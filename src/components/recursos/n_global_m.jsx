@@ -132,20 +132,20 @@ const N_global_m = () => {
       <nav className="navbar navbar-expand-lg navbar-light fixed-bottom bg-white border-top">
         <div className="container-fluid d-flex justify-content-around">
           <Link to="/" className="navbar-brand d-flex flex-column align-items-center">
-            <img src="/img/home.png" alt="Inicio" className="navbar-img" />
-            <p className="texto">Inicio</p>
+            <img src="/img/home.png" alt="Inicio" className="navbar-img" style={{height:"40px", width:"40px", marginLeft:"1px"}} />
+            <p className="texto" style={{fontSize:"16px"}}>Inicio</p>
           </Link>
           <Link to="/rastreos" className="navbar-brand d-flex flex-column align-items-center">
-            <img src="/img/logo_2.png" alt="Rastreos" className="navbar-img" />
-            <p className="texto">Rastreos</p>
+            <img src="/img/logo_2.png" alt="Rastreos" className="navbar-img" style={{height:"40px", width:"50px"}}/>
+            <p className="texto" style={{fontSize:"16px"}}>Rastreos</p>
           </Link>
           <Link to="/ubicacion" className="navbar-brand d-flex flex-column align-items-center">
-            <img src="/img/rastreo.png" alt="Ubicación" className="navbar-img" />
-            <p className="texto">Ubicación</p>
+            <img src="/img/rastreo.png" alt="Ubicación" className="navbar-img" style={{height:"40px", width:"40px"}}/>
+            <p className="texto" style={{fontSize:"16px"}}>Ubicación</p>
           </Link>
           <Link to="/sesion" className="navbar-brand d-flex flex-column align-items-center">
-            <img src="/img/perfil.png" alt="Perfil" className="navbar-img" />
-            <p className="texto">Perfil</p>
+            <img src="/img/perfil.png" alt="Perfil" className="navbar-img" style={{height:"40px", width:"40px", marginLeft:"1px"}}/>
+            <p className="texto" style={{fontSize:"16px"}}>Perfil</p>
           </Link>
         </div>
       </nav>
