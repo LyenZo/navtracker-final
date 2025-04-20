@@ -5,8 +5,8 @@ import { useEffect } from "react";
 
 const N_global = () => {
     const carouselWrapperStyle = {
-        marginTop: "30px", 
-        maxWidth: "80%",  
+        marginTop: "10px", 
+        maxWidth: "70%",  
         margin: "0 auto", 
     };
 
@@ -51,20 +51,21 @@ const N_global = () => {
         <div>
             {/* Navbar */}
             <nav className="" style={{ backgroundColor: "#198754" }}>
-                <div className="container-fluid">
-                    <Link className="navbar-brand ms-3 text-white" to="/">
-                        <img src="/img/logo.png" alt="Logo" style={{ height: "40px" }} />
-                    </Link>
-                    <ul className="navbar-nav ms-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/login">Inicia Sesión</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/create_usuario">Regístrate</Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div className="container-fluid d-flex justify-content-between align-items-center py-2" style={{height:"60px",marginBottom:"10px"}}>
+            <Link className="navbar-brand ms-3 text-white align-items-center" to="/">
+            <img src="/img/logo.png" alt="Logo" style={{ height: "50px" }} />
+          </Link>
+            <ul className="navbar-nav d-flex flex-row me-3">
+            <li className="nav-item mx-2 d-flex align-items-center">
+            <Link className="nav-link text-white" to="/login">Inicia Sesión</Link>
+            </li>
+            <li className="nav-item mx-2 d-flex align-items-center">
+            <Link className="nav-link text-white" to="/create_usuario">Regístrate</Link>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
             {/* Carrusel */}
             <div
@@ -75,7 +76,7 @@ const N_global = () => {
                 data-bs-interval="3000"
             >
                 <div className="carousel-indicators">
-                    {[0, 1, 2, 3, 4, 5].map((index) => (
+                    {[0, 1, 2, 3].map((index) => (
                         <button
                             key={index}
                             type="button"
@@ -87,7 +88,7 @@ const N_global = () => {
                 </div>
 
                 <div className="carousel-inner">
-                    {["Img1.jpg", "Img3.jpg", "Img4.jpg", "Img5.jpg", "Img6.jpg"].map((img, index) => (
+                    {["Img3.jpg", "Img4.jpg", "Img5.jpg", "Img6.jpg"].map((img, index) => (
                         <div
                             key={index}
                             className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -112,11 +113,10 @@ const N_global = () => {
                 </button>
             </div>
 
-           
             {/* Sobre Nosotros */}
             <section
       className="py-5"
-      style={{ backgroundColor: "#198754", marginTop: "4rem" }}
+      style={{ backgroundColor: "white", marginTop: "10px" }}
     >
       <div className="container text-center text-white">
         <h2 className="mb-4">Sobre Navtracker</h2>
@@ -129,7 +129,7 @@ const N_global = () => {
           <div className="carousel-inner">
             {/* Primer Slide - Sobre Navtracker */}
             <div className="carousel-item active">
-              <p className="lead">
+              <p className="lead" style={{color:"#333"}}>
                 En <strong>Navtracker</strong>, nos dedicamos a ofrecer
                 soluciones de rastreo en tiempo real para los pasajeros de
                 camiones interurbanos. Nuestra misión es brindar seguridad,
@@ -137,7 +137,7 @@ const N_global = () => {
               </p>
             </div>
             <div className="carousel-item">
-              <p className="lead">
+              <p className="lead" style={{color:"#333"}}>
                 Con el uso de tecnología avanzada, garantizamos que nuestros
                 usuarios tengan acceso a información actualizada sobre la
                 ubicación de sus vehículos, lo que les permite tomar decisiones
@@ -145,7 +145,7 @@ const N_global = () => {
               </p>
             </div>
             <div className="carousel-item">
-              <p className="lead">
+              <p className="lead" style={{color:"#333"}}>
                 Nos comprometemos a ofrecer una experiencia de viaje más
                 cómoda y segura, conectando a los pasajeros con sus destinos de
                 manera eficiente. Además, trabajamos en colaboración con las
@@ -156,7 +156,7 @@ const N_global = () => {
 
             {/* Segundo Slide - ¿Por qué elegir Navtracker? */}
             <div className="carousel-item">
-              <ul className="list-unstyled">
+              <ul className="list-unstyled" style={{color:"#333"}}>
                 <li>
                   <i className="bi bi-check-circle-fill"></i> <strong>Seguridad:</strong> Protección en todo momento con monitoreo en tiempo real.
                 </li>
@@ -205,7 +205,7 @@ const N_global = () => {
 
             {/* Contáctanos */}
              {/* Contáctanos */}
-             <section className="py-5 bg-white">
+            <section className="py-5 bg-white">
                 <div className="container text-center contacto-box">
                     <h2 className="mb-4">Contáctanos</h2>
                     <p className="lead mb-3">¿Tienes dudas o comentarios? ¡Nos encantaría saber de ti!</p>
