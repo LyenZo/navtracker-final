@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const N_global = () => {
     const carouselWrapperStyle = {
-        marginTop: "9rem", 
+        marginTop: "30px", 
         maxWidth: "80%",  
         margin: "0 auto", 
     };

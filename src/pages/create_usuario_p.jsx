@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 import Create_usuario from "../components/CRUDS/usuario/create_usuario";
 
 const Create_usuario_p = () => {

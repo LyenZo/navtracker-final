@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Create_vehiculo from "../components/CRUDS/vehiculo/create_vehiculo";
 import List_vehiculo from "../components/CRUDS/vehiculo/list_vehiculo";
 import Excel_vehiculo from "../components/CRUDS/vehiculo/excel_vehiculo";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 
 const Crud_vehiculo = () => {
     const [isMobile, setIsMobile] = useState(false);

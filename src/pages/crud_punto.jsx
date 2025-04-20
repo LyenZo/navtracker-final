@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 
 import Create_punto from "../components/CRUDS/punto_ruta/create_punto";
 import List_punto from "../components/CRUDS/punto_ruta/list_punto";

@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Create_usuario from "../components/CRUDS/usuario/create_usuario";
 import List_usuario from "../components/CRUDS/usuario/list_usuario";
 import Excel_usuario from "../components/CRUDS/usuario/excel_usuario";
-import N_global_m from "../components/recursos/n_global_m";
+import N_global_m from "../components/recursos/n_global_m2";
 
 const Crud_usuario = () => {
     const [isMobile, setIsMobile] = useState(false);
