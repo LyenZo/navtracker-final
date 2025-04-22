@@ -49,7 +49,7 @@ import Ubicacion from "./pages/ubicacion_p";
 //Rastreos
 import Rastreos from "./pages/rastreos_p";
 //Mapa rastreo
-import Map from "./components/CRUDS/rastreo/mapa_rastreo";
+import Map from "./pages/mapa_rastreo";
 
 
 

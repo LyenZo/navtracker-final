@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../css/list_rastreo.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const R_rastreo = () => {
+const M_rastreo = () => {
     const [rastreos, setRastreos] = useState([]);
     const [selectedRastreo, setSelectedRastreo] = useState(null); // Asegúrate de usar null en lugar de un arreglo vacío
 
@@ -79,6 +79,10 @@ const R_rastreo = () => {
                             <Marker position={center} /> {/* Marcador en las coordenadas seleccionadas */}
                         </GoogleMap>
                     </LoadScript>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
             )}
 
@@ -95,10 +99,14 @@ const R_rastreo = () => {
                             <Marker position={{ lat: 0, lng: 0 }} />
                         </GoogleMap>
                     </LoadScript>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
             )}
         </div>
     );
 };
 
-export default R_rastreo;
+export default M_rastreo;
