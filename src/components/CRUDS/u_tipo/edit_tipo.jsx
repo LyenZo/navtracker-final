@@ -11,7 +11,7 @@ const Edit_tipo = () => {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/api/u_tipo/${id_tipo}`)
+        axios.get(`https://api.navtracker.xdn.com.mx/api/u_tipo/${id_tipo}`)
             .then(response => setTusuario(response.data))
             .catch(error => console.error(error));
     }, [id_tipo]);
@@ -22,7 +22,7 @@ const Edit_tipo = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:3001/api/u_tipo/${id_tipo}`, t_usuario)
+        axios.put(`https://api.navtracker.xdn.com.mx/api/u_tipo/${id_tipo}`, t_usuario)
         .then(() => {
             alert("Tipo de usuario actualizado");
             navigate("/crud_tipo");

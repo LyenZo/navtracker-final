@@ -19,7 +19,7 @@ const Edit_ruta = () => {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/api/ruta/${id_ruta}`)
+        axios.get(`https://api.navtracker.xdn.com.mx/api/ruta/${id_ruta}`)
             .then(response => setRuta(response.data))
             .catch(error => console.error(error));
     }, [id_ruta]);
@@ -30,7 +30,7 @@ const Edit_ruta = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:3001/api/ruta/${id_ruta}`, ruta)
+        axios.put(`https://api.navtracker.xdn.com.mx/api/ruta/${id_ruta}`, ruta)
         .then(() => {
             alert("Ruta actualizada");
             navigate("/crud_ruta"); 

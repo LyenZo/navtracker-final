@@ -10,7 +10,7 @@ const RecuperarPassword = () => {
         setMensaje("");
 
         try {
-            const response = await axios.post("http://localhost:3001/api/recuperar-password", { email });
+            const response = await axios.post("'https://api.navtracker.xdn.com.mx/api/recuperar-password", { email });
             setMensaje(response.data.message);
         } catch (error) {
             setMensaje("Hubo un problema. Intenta de nuevo.");

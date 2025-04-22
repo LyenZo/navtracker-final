@@ -23,7 +23,7 @@ const Create_rastreo = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("https://api.navtracker.xdn.com.mx/api/rastreo/", rastreo);
+            await axios.post("https://34.238.135.198/api/rastreo/", rastreo);
             alert("Rastreo registrado correctamente");
             setRastreo({
                 id_ruta:"",

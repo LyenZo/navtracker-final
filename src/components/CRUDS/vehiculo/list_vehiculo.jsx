@@ -8,13 +8,13 @@ const List_vehiculo = () => {
     const [vehiculosPerPage, setVehiculosPerPage] = useState(5); 
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/vehiculo/")
+        axios.get("https://api.navtracker.xdn.com.mx/api/vehiculo/")
             .then(response => setVehiculos(response.data))
             .catch(error => console.error(error));
     }, []);
 
     const handleDelete = (id_vehiculo) => {
-        axios.delete(`http://localhost:3001/api/vehiculo/${id_vehiculo}`)
+        axios.delete(`https://api.navtracker.xdn.com.mx/api/vehiculo/${id_vehiculo}`)
             .then(() => setVehiculos(vehiculos.filter(vehiculo => vehiculo.id_vehiculo !== id_vehiculo)))
             .catch(error => console.error(error));
     };

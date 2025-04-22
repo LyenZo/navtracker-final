@@ -47,7 +47,7 @@ const Excel_rastreo = () => {
             id_punto
           };
 
-          await axios.post('http://localhost:3001/api/rastreo', rastreo);
+          await axios.post('https://34.238.135.198/api/rastreo', rastreo);
         }
         alert('Datos cargados correctamente');
       } catch (error) {

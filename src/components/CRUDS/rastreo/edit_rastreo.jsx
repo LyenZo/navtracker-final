@@ -16,7 +16,7 @@ const Edit_rastreo = () => {
     });
 
     useEffect(() => {
-        axios.get(`https://api.navtracker.xdn.com.mx/api/rastreo/${id_rastreo}`)
+        axios.get(`https://34.238.135.198/api/rastreo/${id_rastreo}`)
             .then(response => setRastreo(response.data))
             .catch(error => console.error(error));
     }, [id_rastreo]);
@@ -27,7 +27,7 @@ const Edit_rastreo = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:3001/api/rastreo/${id_rastreo}`, rastreo)
+        axios.put(`https://34.238.135.198/api/rastreo/${id_rastreo}`, rastreo)
         .then(() => {
             alert("Rastreo actualizado");
             navigate("/crud_rastreo"); 

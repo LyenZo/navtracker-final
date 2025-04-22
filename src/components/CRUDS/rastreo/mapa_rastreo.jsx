@@ -10,7 +10,7 @@ const R_rastreo = () => {
 
     // Función para obtener los rastreos de la API
     const fetchRastreos = () => {
-        axios.get("https://3.88.222.39/api/rastreo")
+        axios.get("https://34.238.135.198/api/rastreo")
             .then(response => setRastreos(response.data))  // Guarda los datos en el estado
             .catch(error => console.error("Error fetching data", error));
     };

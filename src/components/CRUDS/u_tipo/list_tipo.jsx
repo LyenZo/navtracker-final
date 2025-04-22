@@ -8,13 +8,13 @@ const R_tipo = () => {
     const [usuariosPerPage, setUsuariosPerPage] = useState(5); 
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/u_tipo/")
+        axios.get("https://api.navtracker.xdn.com.mx/api/u_tipo/")
             .then(response => setTusuarios(response.data))
             .catch(error => console.error(error));
     }, []);
 
     const handleDelete = (id_tipo) => {
-        axios.delete(`http://localhost:3001/api/u_tipo/${id_tipo}`)
+        axios.delete(`https://api.navtracker.xdn.com.mx/api/u_tipo/${id_tipo}`)
             .then(() => setTusuarios(t_usuarios.filter(t_usuario => t_usuario.id_tipo !== id_tipo)))
             .catch(error => console.error(error));
     };

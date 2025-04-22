@@ -19,7 +19,7 @@ const Perfil = () => {
 
         const fetchUsuario = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/usuario/perfil", {
+                const response = await axios.get("'https://api.navtracker.xdn.com.mx/api/usuario/perfil", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setUsuario(response.data);

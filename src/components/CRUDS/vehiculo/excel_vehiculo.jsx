@@ -32,7 +32,7 @@ const Excel_vehiculo = () => {
         for (const row of rows) {
           const { vehiculo } = row; 
           if (vehiculo) {
-            await axios.post('http://localhost:3001/api/vehiculo', { vehiculo });
+            await axios.post('https://api.navtracker.xdn.com.mx/api/vehiculo', { vehiculo });
           }
         }
         alert('Datos cargados correctamente');

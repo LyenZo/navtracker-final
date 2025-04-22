@@ -18,7 +18,7 @@ const Create_vehiculo = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/api/vehiculo/", vehiculo);
+            await axios.post("https://api.navtracker.xdn.com.mx/api/vehiculo/", vehiculo);
             alert("Vehiculo registrado correctamente");
             setVehiculo({
                 vehiculo:""

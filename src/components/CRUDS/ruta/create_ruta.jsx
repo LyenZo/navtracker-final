@@ -26,7 +26,7 @@ const Create_ruta = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/api/ruta/", ruta);
+            await axios.post("https://api.navtracker.xdn.com.mx/api/ruta/", ruta);
             alert("Ruta registrado correctamente");
             setRuta({
                 id_ruta: "",
